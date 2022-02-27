@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <center>
-        <h1> Employee Login </h1>
-    </center>
+    <div class="top"><h1> Employee Login </h1></div>
+        
+    
     <form>
         <div class="container">
-            <label>ID : </label>
+            <h2>Personnel Login</h2>
+            <label>Employee ID: </label>
             <input type="text" placeholder="Enter Employee ID" name="id" required>
-            <label>Password : </label>
+
+            <label>Password: </label>
             <input type="password" placeholder="Enter Password" name="pw" required>
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-            <button type="button" class="cancelbtn"> Cancel</button>
-            Forgot <a href="#"> password? </a>
+
+            <button type="submit" id="login">Login</button>
+
+            <div class="ftpw"><a href="#"> Forgot password? </a></div>
         </div>
     </form>
 </body>
