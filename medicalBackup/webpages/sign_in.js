@@ -1,13 +1,23 @@
-const express = require('express')
+/**
+ * Initiates the Sign-In Page of Website
+ */
+
+const express = require('express');
 const app = express();
-const port = 3000;
+const path = require('path');
 
-app.get('/', (req, res) => {
-    res.sendFile('./signin.html', {root: __dirname});
-})
+// Grabs CSS Stylesheet
+app.use(express.static(path.join(__dirname,'css')));
 
-app.get('/schedule', (req, res) => {
+// Shows the actual HTML Page
+app.use('/',(req,res,next)=>{
+    res.sendFile(path.join(__dirname,'signin.html'));
+});
+
+ // Shifts HTML Page to New Page            -may need to get rid of or change 'use' to 'get'
+ app.get('/schedule', (req, res) => {
     res.sendFile('./schedule.html', {root: __dirname});
 })
 
-app.listen(port, () => console.log(`listening on port ${port}!`));
+// Port Number
+app.listen(3000);

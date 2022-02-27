@@ -1,5 +1,5 @@
 /**
- * Initiates the Page to Show Employee Schedule
+ * Initiates the Patient Info Page
  */
 
  const express = require('express');
@@ -11,12 +11,12 @@
  
  // Shows the actual HTML Page
  app.use('/',(req,res,next)=>{
-     res.sendFile(path.join(__dirname,'schedule.html'));
+     res.sendFile(path.join(__dirname,'patient_info.html'));
  });
 
  // Shifts HTML Page to New Page            -may need to get rid of or change 'use' to 'get'
- app.get('/patient_info', (req, res) => {
-    res.sendFile('./patient_info.html', {root: __dirname});
+ app.get('/schedule', (req, res) => {
+    res.sendFile('./schedule.html', {root: __dirname});
 })
  
  // Port Number
