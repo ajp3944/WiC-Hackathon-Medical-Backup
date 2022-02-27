@@ -1,0 +1,22 @@
+{
+  "name": "medicalbackup",
+  "version": "1.0.0",
+  "description": "Backup for Schedules and User Info in case of Emergency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajp3944/WiC-Hackathon.git"
+  },
+  "author": "Alexa Ponce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajp3944/WiC-Hackathon/issues"
+  },
+  "homepage": "https://github.com/ajp3944/WiC-Hackathon#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
