@@ -8,7 +8,7 @@ const port = 3000
 * REST URL : https://jsonplaceholder.typicode.com/todos/1
 */
 app.get('/getAPIResponse', (req, res) => {
-    api_helper.make_API_call('https://api.web3.storage/status/bafybeihkm5y7q6ye3at6co43ekz64f6nvn4576m2pfghhlj4ldgssvn6fe')
+    api_helper.make_API_call('https://api.web3.storage/status/bafybeidhsywkcnm4hygm7bz6nway4nlbmuf6spl4wvtrva2w2ijyv3wqre')
     .then(response => {
         res.json(response)
     })
