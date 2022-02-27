@@ -21,3 +21,23 @@ app.use('/',(req,res,next)=>{
 
 // Port Number
 app.listen(3000);
+
+/*
+async function test() {
+    const res = await client.get(bafybeihkm5y7q6ye3at6co43ekz64f6nvn4576m2pfghhlj4ldgssvn6fe) // Web3Response
+    const files = await res.files() // Web3File[]
+    for (const file of files) {
+    console.log(`${file.cid} ${file.name} ${file.size}`)
+}
+  }
+  
+  test();
+*/
+
+app.get('/', (req, res) => {
+    res.sendFile('https://api.web3.storage/car/bafybeihkm5y7q6ye3at6co43ekz64f6nvn4576m2pfghhlj4ldgssvn6fe', {root: __dirname});
+})
+
+app.get('/test', (req, res) => {
+    res.sendFile('https://api.web3.storage/car/bafybeihkm5y7q6ye3at6co43ekz64f6nvn4576m2pfghhlj4ldgssvn6fe', {root: __dirname});
+})

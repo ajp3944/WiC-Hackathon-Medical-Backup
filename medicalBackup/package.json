@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/ajp3944/WiC-Hackathon#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
