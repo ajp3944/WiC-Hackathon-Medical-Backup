@@ -1,3 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Info</title>
+    <style>
+        #viewContent {
+            padding-left: 20px;
+        }
+          
+            #viewContent select, #viewContent button {
+                font-size: 25px;
+            }
+          
+            #viewContent h4 {
+                margin: 10px 0;
+            }
+          
+            #viewContent .textAlignCenter {
+                text-align: center;
+            }
+          
+                #viewContent .textAlignCenter img {
+                    display: none;
+                    width: 100px;
+                }
+          
+            #viewContent #message table {
+                width: 100%;
+            }
+          
+                #viewContent #message table th {
+                    text-align: left;
+                    text-decoration: underline;
+                }
+        </style>
+</head>
 <body>
-    <h1>About Us</h1>
+    <select id="citySelect">
+        <option value="Select">Patient Family</option>
+        <option value="5128581">Jessica Jones</option>
+        <option value="5391959">Franchesca Jones</option>
+        <option value="2643743">Jonathon Jones</option>
+    </select>
+      
+    <button id="submit">Submit</button>
+    <div id="message"></div>
+    <table>
+        <tr>
+          <th>Social Security</th>
+          <th>Insurance ID</th>
+          <th>Patient ID</th>
+        </tr>
+        <tr>
+          <td>3433947293</td>
+          <td>AF349024</td>
+          <td>03482023</td>
+        </tr>
+      </table>
+      <button id="getInfo">Get Info</button>
 </body>
+</html>
